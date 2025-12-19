@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins, sans-serif
+    }
+    body{
+        background: url(jp.jpg);
+        background-position: center;
+        background-repeat: no repeat;
+        background-size: cover;
+        background: #4b3e0779;
+
+        Display: grid;
+        height: 100vh;
+        place-items: Center;
+        Position: relative;
+        isolation: auto;
+    }
+    body::before{
+        content:'';
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0, 0.4);
+        opacity: 2;
+        z-index: -1;
+
+    }
+    .container{
+        width: 3000x;
+        padding: 2rem;
+        border: 2px solid;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+        color: #000;
+        background: transparent;
+    }
+    h2{
+        text-align: center;
+    }
+    input{
+        padding: 0.4rem 2rem;
+        border: none;
+        border-radius: 25px;
+        border: 3.3px solid rgb(8, 8, 8);
+
+    }
+    button{
+        padding: 0.3em 7rem;
+        border-radius: 2px;
+        border: none;
+        background:orangered;
+        margin-top: 20px;
+        margin: buttom 20px;
+        font-size: 1.5;
+    }
+    span{
+        font-size: 2.3rem;
+        color: rgb(2, 1, 10)
+    }
+
+    
+</style>
+<body>
+    <div class="container">
+        <form>
+            <h2><span>R</span>egistration Form</h2>
+            <label for="name"> Username</label><br>
+            <input type="text" name="username" id="">
+            <br>
+            <label for="password">Password</label><br>
+            <input type="Password" name="Password" id="">
+            <br>
+            <label for="Email">Email</label><br>
+            <input type="email" name="email" id="">
+            <br>
+            <label for="Number">Number</label><br>
+            <input type="Number" name="Number" id="">
+            <br>
+
+            <button>Login</button>
+        </form>
+</body>
+</html>
